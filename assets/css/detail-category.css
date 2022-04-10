@@ -1,0 +1,24 @@
+a {
+    text-decoration:  none;
+}
+.d-homepage {
+    border-right: 2px solid black;
+    padding-right: 5px;
+}
+.d-category .d-title{
+    font-weight: bold;
+}
+.c-product {
+    margin-top: 30px;
+}
+.name-product{
+    margin-top: 20px;
+}
+.price {
+    color: #4a9fd8;
+}
+.c-products{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+}

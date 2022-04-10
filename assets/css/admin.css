@@ -1,0 +1,57 @@
+.container-fluid {
+    background-color: #222;
+    display: flex;
+    color: white;
+    height: 50px;
+}
+.navbar-header {
+    padding:0 10px;
+    font-size: 30px;
+    line-height: 50px;
+}
+.nav li{
+    display: inline-block;
+    list-style: none;
+    padding:  0 20px;
+    line-height: 50px;
+}
+.navbar a{
+  color: white;
+}
+.table {
+    width: 100%;
+    border: 1px solid #222;
+     background-image: linear-gradient( to right,#cfd9df , #e2ebf0 );;
+}
+.table tr,th,td {
+    border: 1px solid #222;
+}
+.bg-warning{
+    background-color: #e2ebf0;
+    border: none;
+}
+.center {
+    text-align: center;
+}
+.themsp{
+    text-align: center;
+}
+.form-group{ 
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 5px 0;
+    margin: 0 auto;
+}
+.form-group label {
+    font-weight: bold;
+}
+.form-group input,select {
+    padding: 7px 0;
+    border: 2px solid rgba(128, 128, 128, 0.194);
+}
+
+.btn-default {
+    background-color: #222;
+    color: aliceblue;
+}

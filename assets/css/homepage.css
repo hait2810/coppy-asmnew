@@ -1,0 +1,320 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-top {
+  border-bottom: 1px solid #c9ae63;
+}
+header{
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px;
+}
+.header-contact {
+  width: 1371px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0;
+  font-size: 14px;
+}
+.header-contact a {
+  text-decoration: none;
+  color: #c9ae63;
+}
+.header-contact img {
+  margin-right: 10px;
+}
+
+.header-menu {
+  width: 1371px;
+  margin: 0 auto;
+  padding-top: 17px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.header-menu .menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #000000;
+}
+
+.header-menu .menu li {
+  list-style: none;
+  position: relative;
+}
+
+.logo-hot {
+  position: absolute;
+  top: 0;
+  transform: translateY(-22px);
+  margin-left: 120px;
+}
+.header-menu .menu > ul > li {
+  display: inline-block;
+  margin: 0 30px;
+  transform: translateY(10px);
+}
+.subnav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #c9ae63;
+  box-shadow: 0 0 10px rgba(197, 17, 17, 0.3);
+  padding: 5px 5px;
+}
+.subnav li {
+  min-width: 100px;
+  padding: 5px 0;
+}
+.subnav a:hover {
+   color: white;
+  }
+.menu li:hover .subnav {
+  display: block;
+}
+.input [type="text"] {
+  padding: 10px 30px;
+  background-color: rgba(207, 211, 203, 0.2);
+  border-radius: 30px;
+  width: 200px;
+  border: none;
+}
+.input {
+  position: relative;
+}
+.icon {
+  position: absolute;
+  transform: translateY(-28px);
+  padding: 0 10px;
+}
+.left {
+  display: flex;
+  
+}
+.subuser a {
+  padding: 5px 5px;
+  display: block;
+  text-decoration: none;
+  min-width: 80px;
+}
+.left .users{
+    margin: 0 10px;
+}
+.left .users img {
+  opacity: 0.7;
+}
+
+
+.cart img{
+    opacity: 0.7;
+}
+.brooch{
+    height: 40px;
+    background-color: #ddd;
+}
+.brooch h3{
+    line-height: 40px;
+    text-align: center;
+}
+.banner{
+    width: 1371px;
+    margin: 80px auto;
+   
+}
+.banner img{
+    width: 100%;
+}
+main {
+    width: 1371px;
+    margin: 0 auto;
+}
+main .title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.products {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-between;
+  width: 100%;
+}
+.products .product{
+  width: 320px;
+  
+  margin: 10px 0px;
+  
+}
+.img-order .img-product img {
+  width: 100%;
+  height: 350px;
+  border-radius: 2px;
+  transition: all 1s; /** Tạo độ mượt **/ 
+}
+.img-order .img-product img:hover {
+  -webkit-transform: scale(1.2); transform: scale(1.2);
+
+}
+.order button {
+  width: 100%;
+  padding: 20px 0;
+  border: none;
+  color: #c9ae63;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: white;
+}
+.product{
+  position: relative;
+  overflow: hidden;
+}
+.order {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+   
+  transform: translateY(120px);
+  animation-name: fadeOut;  /* tên của animation được định nghĩa bởi @keyframes bên dưới*/
+  animation-duration: 1s; /* thời gian diễn ra animation đó*/
+}
+.product:hover .order {
+  transform: translateY(0);
+  transition: ease-in-out 1s;
+    /* ease-in-out: tăng độ mượt cho animation 
+        1s: thời gian diễn ra animation
+    */
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+@keyframes fadeIn{
+  from {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+.product h2 {
+  color: #4a9fd8;
+}
+
+.footer-banner{
+      width: 1371px;
+      margin: 0 auto;
+}
+.footer-banner img{
+  width: 100%;
+  margin-top: 50px;
+  height: 400px;
+}
+.customer-reviews{
+  width:  1371px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.customer-reviews .logo img{
+  width: 800px;
+  height: 400px;
+}
+.input-reviews {
+  margin-left: 20px;
+  display: block;
+  width: 38%;
+  height: 400px;
+  background-image: linear-gradient(#c778d3a8, #d563a977);
+}
+.input-reviews .reviews{
+  margin: 30px auto;
+  background-color: white;
+  width: 400px;
+ 
+}
+
+
+.reviews h3 {
+  color: black;
+  text-align: center;
+  padding: 20px 0;
+}
+.reviews form{
+    text-align: center;
+    margin: 0 20px;
+}
+.reviews input[type="text"] {
+    width: 300px;
+    margin: 10px 0;
+    padding: 9px 0;
+}
+.reviews p {
+  display: inline;
+  font-weight: bold;
+  color: 
+  rgba(0, 0, 0, 0.658);
+}
+.reviews button {
+  background-color: #000000;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+footer {
+ 
+ 
+  background-color: rgba(250, 250, 250, 1);
+}
+.footer-m {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: 1371px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.footer-m .address {
+  width: 400px;
+}
+.footer-m h5{
+  font-size: 15px;
+  margin: 10px 0;
+}
+.footer-m .vitri{
+  font-weight: bold;
+}
+.footer-m .iconf img {
+  width: 20px;
+  margin-right: 10px;
+}
+.footer-m .logo img {
+  border: 1px solid rgba(128, 128, 128, 0.178);
+  padding: 5px 5px;
+}
+.btn_logout{
+   background-color: #fff;
+   border: none;
+   font-size: 16px;
+   transform: translateY(8px);
+}
+.btn_logout:hover {
+  color: rgb(41, 137, 220);
+}

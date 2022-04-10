@@ -1,0 +1,67 @@
+{
+  "products": [
+    {
+      "name": "AF1 Đế Xanh 1:1 ấd",
+      "img": "https://khosneaker.com/wp-content/uploads/2022/02/z3313969617081_ef542eb684ce2fc0313980fd2e89634a-300x420.jpg",
+      "price": "390000",
+      "description": "Đẹp",
+      "categoryId": "4",
+      "id": 1
+    },
+    {
+      "name": " AF1 LOW 07 LUX 1:1",
+      "img": "https://khosneaker.com/wp-content/uploads/2022/03/z3301182714697_af4e02d80015f36fa754d5ecf4fc8f57-300x420.jpg",
+      "price": "350000",
+      "description": "đẹp",
+      "categoryId": "4",
+      "id": 2
+    },
+    {
+      "name": "JD 1 hight mocha pink 1:1",
+      "img": "https://khosneaker.com/wp-content/uploads/2022/03/z3256856569769_e55371dc0ef44e3b84001a4cf7c67b5a-300x300.jpg",
+      "price": "380000 ",
+      "description": "JD 1 hight mocha pink 1:1",
+      "categoryId": "2",
+      "id": 3
+    },
+    {
+      "name": "Jordan Tím 1:1",
+      "img": "https://khosneaker.com/wp-content/uploads/2022/03/z3252776624434_1021340f8e6859e86c350a2947830ed9-300x300.jpg",
+      "price": "350000",
+      "description": "Jordan Tím 1:1",
+      "categoryId": "2",
+      "id": 4
+    }
+  ],
+  "categorys": [
+    {
+      "name": "Jordan",
+      "id": 2
+    },
+    {
+      "name": "MLB",
+      "id": 3
+    },
+    {
+      "name": "AF1",
+      "id": 4
+    }
+  ],
+  "users": [
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$JJn/h2.QaBY5kOUYvd2fbOVtEhp5dtYZ.425g61xM930GA91CyoGu",
+      "id": 1
+    },
+    {
+      "email": "haiaisisi@gmail.com",
+      "password": "$2a$10$i3NQLNfc0nfonvqAH.Cre.RXI9Jpzinzy2Py7ckK1qlClVSk.H8gG",
+      "id": 2
+    },
+    {
+      "email": "admin123@gmail.com",
+      "password": "$2a$10$kdxqciArKe/WDrBycFb59OpNolEL3Hhxm6JMmPfmWp5IvSFAj2xNu",
+      "id": 3
+    }
+  ]
+}

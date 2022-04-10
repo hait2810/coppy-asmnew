@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./assets/css/homepage.css">
+    <link rel="stylesheet" href="./assets/css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="header-contact">
+                   <img src="./assets/icon/phone.png" width="20px" alt=""> 
+                   <h3>Hỗ trợ khách hàng: <a href="tel:0982641483">1900 6666</a></p>
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="logo">
+                <img src="./assets/logo/image 2.png" alt="">
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li class="hot-ne"><a href="">SẢN PHẨM HOT</a>
+                    
+                   <ul class="logo-hot">
+                       <li><img src="./assets/icon/image 7.png" alt=""> </li>
+                   </ul>
+                    </li>
+                    <li><a href="">Sản phẩm</a>
+                     <ul class="subnav">
+                         <li><a href="">AF1</a></li>
+                         <li><a href="">VANS</a></li>
+                     </ul>
+                    </li>
+                    <li><a href="">Sale</a></li>
+                    <li><a href="">Liên hệ</a></li>
+                   
+                </ul>
+            </nav>
+            <div class="left">
+                <form action="">
+                    <div class="input">
+                        <input type="text" placeholder="Bạn cần gì..." name="" id="">
+                    </div>
+                    <div class="icon">
+                        <img src="./assets/icon/search.png" width="18px" alt="">
+                    </div>
+                </form>
+                <div class="users">
+                    <div class="logo">
+                        <a href=""><img src="./assets/icon/user.png" width="30px" alt=""></a>
+                    </div>
+                    
+                </div>
+                <div class="cart">
+                    <a href=""><img src="./assets/icon/bags.png" width="30px" alt=""></a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <div class="brooch">
+        <h3>NẮNG LÊN PHỐ, CHÀNG LÊN ĐỒ</h3>
+    </div>
+    <section class="banner">
+        <img src="./assets/banner/banner_product_noibat.webp" alt="">
+    </section>
+    <main>
+        <div class="container">
+            <form action="">
+            <div class="carts">
+                <a href="">Trang chủ</a>
+                <h4>Giỏ hàng</h4>
+                
+                <table border="1">
+                         <thead>
+                             <tr>
+                                 <th>#</th>
+                                 <th>Tên sản phẩm</th>
+                                 <th>Ảnh sản phẩm</th>
+                                 <th>Đơn giá</th>
+                                 <th>Số lượng</th>
+                                 <th>Thành tiền</th>
+                                 <th>Xoá</th>
+                             </tr>
+                         </thead>
+                         <tbody>
+                             <tr>
+                                 <td  class="product-center">1</td>
+                                 <td class="product-center">Tên sản phẩm</td>
+                                 <td class="product-center"><img src="./assets/images/3.png" width="80px" alt=""></td>
+                                 <td class="product-center">Đơn giá</td>
+                                 <td class="product-center"><input type="number" name="" id=""></td>
+                                 <td class="product-center">132.132</td>
+                                 <td class="product-center"><button><img src="../assets/icon/delete.png" width="50px" alt=""></button></td>
+                             </tr>
+                             
+                          
+                         </tbody>
+                         <tfoot>
+                             <tr>
+                                 <td  class="product-center"></td>
+                                 <td class="product-center">Tổng tiền</td>
+                                 <td class="product-center"></td>
+                                 <td class="product-center"></td>
+                                 <td class="product-center"></td>
+                                 <td class="product-center">132.132</td>
+                                 <td class="product-center"></td>
+                             </tr>
+                         </tfoot>
+                </table>
+                <button class="updatecart">Cập nhật</button>
+                <div class="info-cart">
+                   
+                        <label for="">Người nhận:</label>
+                        
+                        <input type="text" name="name" id="name">
+
+                        <label for="">Số điện thoại:</label>
+                        <input type="text" name="phone" id="phone">
+                        <label for="">Địa chỉ:</label>
+                        <input type="text" name="address" id="address">
+                        <label for="">Ghi chú:</label>
+                       <textarea name="note" id="note" cols="30" rows="10"></textarea>
+                        <h5 class="error"></h5>
+                       <button class="btn_order">Đặt hàng</button>
+                   
+                </div>
+            </div>
+          
+        </div>
+    </form>
+        <script>
+           
+            var btn_order = document.querySelector(".btn_order");
+            btn_order.addEventListener("click", (e) => {
+                e.preventDefault();
+                var phoneformat = /((09|03|07|08|05)+([0-9]{8})\b)/g;
+                var phone = document.querySelector("#phone").value;
+                var name = document.querySelector("#name").value;
+                var address = document.querySelector("#address").value;
+               
+                if(phoneformat.test(phone) == false) {
+                    document.querySelector(".error").innerHTML = "Số điện thoại không đúng định dạng";
+                    return;
+                }else{
+                    document.querySelector(".error").innerHTML = "";
+                }
+                if(!name) {
+                    document.querySelector(".error").innerHTML = "Tên không được để trống";
+                    return;
+                }else{
+                    document.querySelector(".error").innerHTML = "";
+                }
+                if(!address) {
+                    document.querySelector(".error").innerHTML = "Địa chỉ không được để trống";
+                    return;
+                }else{
+                    document.querySelector(".error").innerHTML = "";
+                }
+            })
+        </script>
+    </main>
+    <section class="footer-banner">
+        <img src="./assets/banner/lambanner-thiet-ke-banner-nhu-nike.jpg" alt="">
+    </section>
+    <div class="customer-reviews">
+        <div class="logo">
+            <img src="./assets/banner/2.jpg" alt="">
+        </div>
+        <div class="input-reviews">
+            <div class="reviews">
+                <h3>Contact Us</h3>
+                <form action="">
+                    <p>Your name *</p> <br>
+                    <input type="text" name="" placeholder="Full name" id=""> <br>
+                    <p>Email *</p> <br>
+                    <input type="text" name="" placeholder="Full name" id=""> <br>
+                    <p>Message *</p> <br>
+                    <textarea name="" id="" cols="43" rows="5"></textarea> <br>
+                    <button>Submit *</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+       <div class="footer-m">
+            <div class="address">
+                <img src="./assets/logo/image 2.png" alt="">
+                <h5 class="name-company">
+                    CÔNG TY CỔ PHẦN THỜI TRANG KOWIL VIỆT NAM
+Hotline: 1900 8079
+                </h5>
+                <p><span class="vitri">VP Phía Bắc</span>: Tầng 17 tòa nhà Viwaseen, 48 Phố Tố Hữu,
+                    Trung Văn, Nam Từ Liêm, Hà Nội.
+                    </p>
+            </div>
+            <div class="f-right">
+                <div class="connect">
+                    <h5>
+                        KẾT NỐI
+                    </h5>
+                    <div class="iconf">
+                       <a href=""> <img src="./assets/icon/fb.png" alt=""></a>
+                        <a href=""><img src="./assets/icon/insta.png" alt=""></a>
+                        <a href=""><img src="./assets/icon/ytb.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="connect">
+                    <h5>
+                        PHƯƠNG THỨC THANH TOÁN
+                    </h5>
+                    <div class="iconf">
+                       <a href=""> <img src="./assets/icon/paypal.png" alt=""></a>
+                        <a href=""><img src="./assets/icon/visa.png" alt=""></a>
+                        <a href=""><img src="./assets/icon/349237.png" alt=""></a>
+                        <a href=""><img src="./assets/icon/money.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="logo">
+                    <img src="./assets/icon/image 16.png" alt="">
+                </div>
+
+            </div>
+       </div>
+    </footer>
+</body>
+</html>

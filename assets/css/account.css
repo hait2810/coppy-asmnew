@@ -1,0 +1,75 @@
+a{
+    text-decoration: none;
+}
+.login-link {
+    display: flex;
+}
+.login-link .l-homepage {
+    border-right: 2px solid black;
+    padding-right: 10px;
+}
+.d-account {
+    padding-left:10px;
+}
+.account-content{
+    width: 1100px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+}
+.acc-form{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.acc-form form {
+    display: flex;
+    flex-direction: column;
+}
+.acc-form label {
+    font-weight: bold;
+}
+.acc-form input[type="email"] {
+    padding: 8px 0;
+    background-color: rgba(239, 239, 244, 0.5);
+    border: none;
+    width: 100%;
+}
+.acc-password {
+    display: flex;
+    flex-direction: column;
+}
+.acc-emaill , .acc-password {
+    margin: 15px 0;
+}
+.acc-password input[type="password"] {
+    padding: 8px 0;
+    background-color: rgba(239, 239, 244, 0.5);
+    border: none;
+    width: 100%;
+}
+.acc-form p {
+    margin: 10px 0;
+}
+.acc-fullname input[type="text"] {
+
+    padding: 8px 0;
+    background-color: rgba(239, 239, 244, 0.5);
+    border: none;
+    width: 100%;
+}
+.acc-form button {
+    color: aliceblue;
+    background-color: #000;
+    padding: 8px 0;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.acc-form .register {
+    padding: 8px 0;
+    color: #656565;
+    background-color: #fff;
+    border: 1px solid #656565;
+    font-weight: bold;
+    margin-top: 80px;
+    text-align: center;
+}
