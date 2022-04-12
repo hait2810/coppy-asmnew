@@ -82,7 +82,7 @@ const onSearch:SubmitHandler = data => {
                     
                 </div>
                 <div className="cart">
-                    <a href=""><img src="http://localhost:3000/assets/icon/bags.png" width="30px" alt="" /></a>
+                    <a href="/cart"><img src="http://localhost:3000/assets/icon/bags.png" width="30px" alt="" /></a>
                 </div>
             </div>
 

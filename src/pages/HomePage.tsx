@@ -15,7 +15,7 @@ const HomePage = ({products}: HomePageProps) => {
                 return  <div className="product">
                 <div className="img-order">
                     <div className="img-product">
-                        <img src={item.img} alt="" />
+                       <a href={`detail/${item._id}`}> <img src={item.img} alt="" /></a>
                     </div>
                     <div className="order">
                        <button><a href={`detail/${item._id}`}>XEM CHI TIẾT</a></button>

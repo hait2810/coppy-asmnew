@@ -318,3 +318,16 @@ footer {
 .btn_logout:hover {
   color: rgb(41, 137, 220);
 }
+.tablecart {
+  width: 100%;
+  
+
+}
+
+.tablecart tr, th, td{
+  border: none !important;
+  text-align: center;
+}
+.tablecart th {
+  border: none;
+}

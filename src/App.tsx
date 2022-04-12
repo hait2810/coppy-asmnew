@@ -24,6 +24,7 @@ import EditProduct from './pages/EditProduct'
 import "toastr/build/toastr.min.css";
 import toastr from 'toastr';
 import axios from 'axios'
+import CartPage from './pages/CartPage'
 function App() {
   const [products, setProducts] = useState<ProductType[]>([])
   const [categorys, setCategorys] = useState<CategoryType[]>([])
@@ -75,6 +76,7 @@ function App() {
             <Route index element={<HomePage products={products} />} />
             <Route path='/signup' element={<SignUp />} />
             <Route path='/signin' element={<SignIn />} />
+            <Route path='/cart' element={<CartPage />} />
             <Route path='detail/:id' element={<Detail />  } />
             <Route path='category/:id' element={<DetailCategory />} />
             <Route path="search/:key" element={<Search  />} />

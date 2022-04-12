@@ -3,7 +3,8 @@ import React, { useEffect, useState } from 'react'
 import {useParams} from 'react-router-dom'
 import { detail } from '../api/products'
 import {useForm, SubmitHandler} from 'react-hook-form';
-
+import 'toastr/build/toastr.min.css'
+import toastr from 'toastr'
 
 type DetailProps = {
 
@@ -56,7 +57,7 @@ const Detail = (props: DetailProps) => {
         }
        
            
-            
+            toastr.success("Thêm vào giỏ hàng thành công");
         
             
             // if(!exitsProduct) {
