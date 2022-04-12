@@ -10,10 +10,12 @@ const PrivateRouter = (props: PrivateRouterProps) => {
   const email = JSON.parse(localStorage.getItem('user') as string).user.email;
     
     
+    
     if(email == "haibrave@gmail.com"){
       return props.children
     }else{
-      return <Navigate to="/signin" />
+      return <Navigate to="/" />
     }
+    
 }
 export default PrivateRouter
