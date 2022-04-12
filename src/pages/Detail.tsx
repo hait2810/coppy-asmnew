@@ -16,6 +16,7 @@ type ProductType = {
     id:number
 }
 
+
 const Detail = (props: DetailProps) => {
     const {id} = useParams();
     const [product,setProduct] = useState<ProductType>();
@@ -31,22 +32,23 @@ const Detail = (props: DetailProps) => {
     let cart = [];
     const onOrder:SubmitHandler = async () => {
             const {data} = await detail(id);
-           
+            if(localStorage.getItem("cart")){
+                cart = JSON.parse(localStorage.getItem("cart"));
+           }else{
+               cart.push({...data,quantity:1});
+               localStorage.setItem("cart",JSON.stringify(cart));
+           }
+            const exitsProduct =  cart.find(item => item._id === data._id);
             
-            const exitsProduct =  cart.find(item => item.id === data.id);
+            
+            
             if(exitsProduct) {
                 exitsProduct.quantity++;
                 localStorage.setItem("cart",JSON.stringify(cart));
             }
             
             
-            if(localStorage.getItem("cart")){
-                cart = JSON.parse(localStorage.getItem("cart"));
-           }else{
-               cart.push({...data,quantity:1});
-               localStorage.setItem("cart",JSON.stringify(cart));
-               return false;
-           }
+            
           
            if(!exitsProduct) {
             cart.push({...data,quantity:1});
